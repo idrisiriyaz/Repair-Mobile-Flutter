@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:mobile/widget/colors.dart';
 import 'package:mobile/widget/submit_details.dart';
 import 'package:mobile/widget/image_slider.dart';
