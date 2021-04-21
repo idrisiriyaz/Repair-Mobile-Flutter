@@ -24,11 +24,20 @@ class CustomDrawer extends StatelessWidget {
                     ),
                   ),
                   ListTile(
-                    leading: Text('About'),
+                    leading: Text(
+                      'About',
+                      style: GoogleFonts.poppins(),
+                    ),
                   ),
                   ListTile(
-                    leading: Text('Version'),
-                    subtitle: Text('1.0'),
+                    leading: Text(
+                      'Version',
+                      style: GoogleFonts.poppins(),
+                    ),
+                    subtitle: Text(
+                      '1.0',
+                      style: GoogleFonts.poppins(),
+                    ),
                   ),
                 ],
               )),
