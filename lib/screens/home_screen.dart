@@ -1,29 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile/widget/colors.dart';
 import 'package:mobile/widget/submit_details.dart';
 import 'package:mobile/widget/image_slider.dart';
+import 'package:mobile/widget/custom_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(
-        child: SafeArea(
-          child: Container(
-              child: ListView(
-            children: [
-              ListTile(
-                onTap: () {
-                  Get.toNamed('/second'); //set to navigate next screen
-                },
-                leading: Text('Home'),
-              )
-            ],
-          )),
-        ),
-      ),
+      drawer: CustomDrawer(),
       appBar: AppBar(
           backgroundColor: CustomColor.primaryColor,
           elevation: 0,
