@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile/widget/colors.dart';
 
@@ -16,10 +17,11 @@ class CustomDrawer extends StatelessWidget {
               color: CustomColor.secondaryColor,
               child: ListView(
                 children: [
+                  CircleAvatar(child: Image.network("url")),
                   ListTile(
                     onTap: () {},
                     leading: Text(
-                      'Home',
+                      'User Nme',
                       style: GoogleFonts.poppins(),
                     ),
                   ),
@@ -39,6 +41,22 @@ class CustomDrawer extends StatelessWidget {
                       style: GoogleFonts.poppins(),
                     ),
                   ),
+                  TextButton(
+                      onPressed: () {
+                        Get.offAllNamed('/');
+                      },
+                      style: TextButton.styleFrom(
+                        backgroundColor: CustomColor.primaryColor,
+                        primary: CustomColor.secondaryColor,
+                        padding: EdgeInsets.fromLTRB(120, 10, 120, 10),
+                        shape: new RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(30.0)),
+                      ),
+                      child: Text('Logout',
+                          style: GoogleFonts.poppins(
+                            color: CustomColor.secondaryColor,
+                            fontSize: 20,
+                          )))
                 ],
               )),
         ),
