@@ -39,10 +39,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                   body: TabBarView(
                     children: [
-                      Details(), //Details Widget present /widget/submit_details
-                      Details(),
-                      Details(),
-                      Details(),
+                      SubmitDetails(), //Details Widget present /widget/submit_details
+                      SubmitDetails(),
+                      SubmitDetails(),
+                      SubmitDetails(),
                     ],
                   ),
                 ),

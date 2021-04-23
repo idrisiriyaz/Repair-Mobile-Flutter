@@ -32,6 +32,7 @@ dependencies:
   get: ^4.1.4
   carousel_slider: ^3.0.0
   change_app_package_name: ^1.0.0
+  dropdownfield: ^1.0.3
 
 dev_dependencies:
   flutter_test:

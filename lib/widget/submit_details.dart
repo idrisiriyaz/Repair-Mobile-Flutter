@@ -1,9 +1,10 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mobile/widget/colors.dart';
 
-class Details extends StatelessWidget {
+class SubmitDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -54,7 +55,9 @@ class Details extends StatelessWidget {
                 style: GoogleFonts.poppins(color: CustomColor.secondaryColor)),
             SizedBox(height: 40),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed('/proceed');
+                },
                 style: TextButton.styleFrom(
                   backgroundColor: CustomColor.secondaryColor,
                   primary: CustomColor.primaryColor,
