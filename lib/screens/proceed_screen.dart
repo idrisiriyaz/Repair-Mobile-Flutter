@@ -43,7 +43,6 @@ class ProceedScreen extends StatelessWidget {
                       Icons.phone,
                       color: CustomColor.secondaryColor,
                     ),
-                    Text('|'),
                     TextButton(
                         onPressed: () {
                           Get.toNamed('/proceed');

@@ -65,7 +65,7 @@ class ProceedDetails extends StatelessWidget {
           SizedBox(height: 40),
           TextButton(
               onPressed: () {
-                Get.toNamed('/proceed');
+                Get.toNamed('/checkout');
               },
               style: TextButton.styleFrom(
                 backgroundColor: CustomColor.secondaryColor,
